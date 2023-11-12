@@ -82,6 +82,17 @@ footer {
     color: #fff;
 }
 
+/* Link Styles */
+a:link, a:visited, a:hover, a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 600px) {
     body {
@@ -96,15 +107,4 @@ footer {
         display: block;
         margin: 0;
     }
-}
-
-/* Link Styles */
-a:link, a:visited, a:hover, a:active {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:hover, a:active {
-    text-decoration: underline;
 }
