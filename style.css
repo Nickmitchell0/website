@@ -2,8 +2,6 @@
 body, h1, p, ul {
     margin: 0;
     padding: 0;
-    width: 100%;
-    
 }
 
 /* Global Styles */
@@ -12,6 +10,7 @@ body {
     line-height: 1.6;
     color: #fff;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Typography */
@@ -86,7 +85,7 @@ footer {
 /* Responsive Design */
 @media screen and (max-width: 600px) {
     body {
-        padding: 0 20px;
+        padding: 0 20px; /* Adjust padding for mobile screens */
     }
 
     h1 {
@@ -98,26 +97,14 @@ footer {
         margin: 0;
     }
 }
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
+
+/* Link Styles */
+a:link, a:visited, a:hover, a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
 }
 
-a:visited {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: white;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: white;
-  background-color: transparent;
-  text-decoration: underline;
+a:hover, a:active {
+    text-decoration: underline;
 }
