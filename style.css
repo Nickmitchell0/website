@@ -61,7 +61,13 @@ li {
     }
 }
 
-h1 emoji, h2 emoji {
+h1, h2 {
+    display: flex;
+    align-items: center;
+}
+
+h1::before, h2::before {
+    content: attr(data-emoji);
     font-size: 1.2em;
     margin-right: 0.2em;
 }
